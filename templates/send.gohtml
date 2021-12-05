@@ -1,0 +1,30 @@
+    <!doctype html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device.width, user-scalable=no, initial-scale=1.0, maximum-scale-1.0, minimum-scale-1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>LMS Email Send</title>
+        <style>
+            .btn{
+                background-color: #0ce5e5;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: left;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+    <h1>Email send successfully to :{{.First}}</h1>
+    <h2>Email id :{{.Email}}</h2>
+
+    <br>
+    <!--a href="/">Send Another!</a-->
+    <button class="btn"> <a href="/">Send Another!</a></button>
+    </body>
+    </html>
+
