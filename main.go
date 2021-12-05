@@ -1,3 +1,4 @@
+// Copy Right Ratheesh Alon Rajan
 package main
 
 import (
@@ -117,6 +118,7 @@ func SendNewMail(emConfig EmailType, dataEmail EmailMessage, htmlIncoming *[]byt
 	if len(dataEmail.Bcc) > 0 {
 		e.Bcc = dataEmail.Bcc
 	}
+
 	//e.Send("smtp.gmail.com:587", smtp.PlainAuth("", "", "", "smtp.gmail.com"))
 	err = e.Send(emConfig.SMTP, smtp.PlainAuth("", emConfig.Email, emConfig.Pass, emConfig.Host))
 	if err != nil {
